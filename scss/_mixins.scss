@@ -1,7 +1,10 @@
 @mixin f-div {
   max-width: 235px;
-  height: 700px;
   margin-left: 100px;
+  @media (max-width: 1350px) {
+    margin-left: 5px;
+    max-width: 180px;
+  }
 }
 
 @mixin disc {
@@ -12,6 +15,9 @@
   font-weight: 400;
   line-height: normal;
   margin-bottom: 10px;
+  @media (max-width: 1350px) {
+    font-size: 14px;
+  }
 }
 
 @mixin disc1 {
@@ -22,13 +28,58 @@
   font-weight: 400;
   line-height: normal;
   margin-bottom: 37px;
+  @media (max-width: 1350px) {
+    font-size: 20px;
+  }
 }
 
 @mixin disc2 {
   color: #636060;
-  font-family: Helvetica;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  @media (max-width: 1350px) {
+    font-size: 11px;
+  }
+}
+
+@mixin rome-h1 {
+  color: #343232;
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 23px;
+  @media (max-width: 1350px) {
+    font-size: 16px;
+  }
+}
+
+@mixin div-p {
+  color: #636060;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 9px;
+  @media (max-width: 1350px) {
+    font-size: 14px;
+  }
+}
+
+@mixin big-div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 418px;
+  margin-top: -220px;
+  max-width: 924px;
+  @media (max-width: 1350px) {
+    max-width: 870px;
+    margin-left: 200px;
+  }
 }

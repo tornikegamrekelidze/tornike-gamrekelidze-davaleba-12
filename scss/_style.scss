@@ -65,4 +65,29 @@ footer {
   .disc2 {
     @include disc2;
   }
+
+  .big-div {
+    @include big-div;
+  }
+  .div-2 {
+    width: 286px;
+    height: 312px;
+  }
+  .rome-h1 {
+    @include rome-h1;
+  }
+
+  p {
+    @include div-p;
+  }
+  .div-3 {
+    width: 286px;
+    height: 312px;
+    margin-top: 56px;
+  }
+  .f-photo {
+    @media (max-width: 700px) {
+      width: 220px;
+    }
+  }
 }

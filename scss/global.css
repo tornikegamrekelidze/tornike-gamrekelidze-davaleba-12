@@ -229,8 +229,13 @@ section {
 
 footer .f-div {
   max-width: 235px;
-  height: 700px;
   margin-left: 100px;
+}
+@media (max-width: 1350px) {
+  footer .f-div {
+    margin-left: 5px;
+    max-width: 180px;
+  }
 }
 footer .disc {
   color: #636060;
@@ -241,6 +246,11 @@ footer .disc {
   line-height: normal;
   margin-bottom: 10px;
 }
+@media (max-width: 1350px) {
+  footer .disc {
+    font-size: 14px;
+  }
+}
 footer .disc1 {
   color: #010101;
   font-family: "Roboto", sans-serif;
@@ -250,11 +260,77 @@ footer .disc1 {
   line-height: normal;
   margin-bottom: 37px;
 }
+@media (max-width: 1350px) {
+  footer .disc1 {
+    font-size: 20px;
+  }
+}
 footer .disc2 {
   color: #636060;
-  font-family: Helvetica;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media (max-width: 1350px) {
+  footer .disc2 {
+    font-size: 11px;
+  }
+}
+footer .big-div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 418px;
+  margin-top: -220px;
+  max-width: 924px;
+}
+@media (max-width: 1350px) {
+  footer .big-div {
+    max-width: 870px;
+    margin-left: 200px;
+  }
+}
+footer .div-2 {
+  width: 286px;
+  height: 312px;
+}
+footer .rome-h1 {
+  color: #343232;
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 23px;
+}
+@media (max-width: 1350px) {
+  footer .rome-h1 {
+    font-size: 16px;
+  }
+}
+footer p {
+  color: #636060;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 9px;
+}
+@media (max-width: 1350px) {
+  footer p {
+    font-size: 14px;
+  }
+}
+footer .div-3 {
+  width: 286px;
+  height: 312px;
+  margin-top: 56px;
+}
+@media (max-width: 700px) {
+  footer .f-photo {
+    width: 220px;
+  }
 }/*# sourceMappingURL=global.css.map */
