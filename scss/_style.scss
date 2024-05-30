@@ -26,3 +26,43 @@ header {
     }
   }
 }
+
+section {
+  height: 606px;
+  background-image: url(../images/saxli.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 85px;
+}
+h1 {
+  @extend %section;
+}
+h2 {
+  @extend %section1;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+footer {
+  .f-div {
+    @include f-div;
+  }
+  .disc {
+    @include disc;
+  }
+  .disc1 {
+    @include disc1;
+  }
+  .disc2 {
+    @include disc2;
+  }
+}
